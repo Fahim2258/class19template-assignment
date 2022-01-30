@@ -115,9 +115,6 @@ header{
 .header-menu ul li a:hover{
     color: #b46827;
 }
-
-
-
 .header-menu ul li::after {
     content: "";
     width: 74%;
@@ -132,9 +129,6 @@ header{
 .header-menu  ul li:hover::after{
     transform: scaleX(1);
 }
-
-
-
 /* DROUPDOWN CSS */
 .header-menu ul li ul{
     position: absolute;
@@ -239,16 +233,44 @@ header{
 }
 
 /* service section css */
+
+.service_box img{
+    transition: .6s;
+}
+.service_box:hover img {
+transform: rotateY(380deg);
+}
+.service_box:hover a{
+    background: transparent;
+    color:#c69453;
+}
+.service_box a:hover{
+    background: #000;
+    color: #fff;
+}
+/* .service_box a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 5px;
+    position: absolute;
+} */
+
+
+
+
+
 .service{
     background: #f8f8f8;
     padding: 50px 0;
 }
-.service_item {}
 .service_box {
     box-shadow: 4px 3px 8px #1715152e;
     width: 23%;
     margin-right: 2%;
     padding: 50px 0;
+ 
 }
 .service_box img{}
 .service_box h2 {
@@ -266,13 +288,25 @@ header{
     display: inline-block;
     padding: 10px 25px;
     border-radius: 5px;
+    box-shadow: 4px 4px 12px #dfd6d6;
+    transition: .6s;
 }
 .service_item .service_box:nth-child(4n+4){
     margin: 0;
 }
-
-
 /* vedio secdtion css */
+.vedio-content-right a {
+    color: #fff;
+    background: #000;
+    padding: 14px 19px;
+    display: inline-block;
+    margin-top: 25px;
+    transition: .6s;
+}
+.vedio-content-right a:hover{
+    background:#c69453;
+    color: #000;
+}
 .vedio{
     background: #f8f8f8;
     padding: 50px 0;
@@ -296,9 +330,11 @@ header{
     color: #c39150;
 }
 /* CONTACT  SECTION CSS */
-.contact{}
+.contact{
+    background: #f8f8f8;
+}
 .contact-form{
-    width: 50%;
+    width: 48%;
 }
 .contact-form h2{
     font-size: 35px ;
@@ -309,29 +345,65 @@ header{
     padding: 20px 0;
 }
 .contact-img{
-    width: 45%;
-    margin-left: 5%;
+    width: 50%;
 }
 .contact-form img{}
-
-
-.name{
+.name {
     width: 100%;
-    padding: 10px  10px;
+    padding: 18px  10px;
     margin-bottom: 10px;
+    border: none;
+    box-shadow: 4px 4px 12px #dfd6d6;
+    font-size: 17px;
 }
 .email{
     width: 100%;
-    padding: 10px  10px;
+    padding: 18px  10px;
     margin-bottom: 10px;
+    border: none;
+    box-shadow: 4px 4px 12px #dfd6d6;
+    font-size: 17px;
 }
 .phone{
     width: 100%;
-    padding: 10px  10px;
+    padding: 18px  10px;
     margin-bottom: 10px;
+    border: none;
+    box-shadow: 4px 4px 12px #dfd6d6;
+    font-size: 17px;
 }
 .message{
     width: 100%;
-    padding: 10px  10px;
- 
+    padding: 18px  10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 4px 4px 12px #dfd6d6;
+    font-size: 17px;
+}
+.contact-form a{
+    color: #fff;
+    background:#c39150;
+    padding: 15px 20px ;
+    display: inline-block;
+}
+.contact-img img {
+    width: 923px;
+    height: 717px;
+}
+
+/* Footer css */
+
+footer{
+    background:#6d6d6d;
+    color: #fff;
+    padding: 20px 0;
+}
+footer nav li{
+    display: inline-block;
+}
+footer nav li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 20px;
 }
