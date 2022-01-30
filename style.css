@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    Font-family: Work Sans, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+    margin-left: -5px;
+}
+.text-start{
+    text-align: left;
+}
+.text-end{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1366px;
+}
+.w-100{
+    width: 100%;
+}
+.w-75{
+    width: 75%;
+}
+.w-50{
+    width: 50%;
+}
+.w-25{
+    width: 25%;
+}
+.w-10{
+    width: 10%;
+}
+.w-20{
+    width: 20%;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.my-5{
+    margin: 50px 0;
+}
+.py-5{
+    padding: 50px 0;
+}
+.m-auto{
+    margin: auto;
+} 
+/* ****** HEADER CSS******* */
+header{
+    background: rgba(0, 0, 0, 0.13);
+    position:relative;
+    z-index: 999999;
+}
+.header-logo{}
+.header-logo img {
+    width: 300px;
+    transform: translate(0px, 7px);
+}
+.header-menu{}
+.header-menu nav i{
+    margin-left: 5px;
+}
+.header-menu ul{
+}
+.header-menu  ul li {
+    display: inline-block;
+    line-height: 66px;
+    position: relative;
+}
+.header-menu  ul li a {
+    color: #fff;
+    padding: 0 15px;
+    font-size: 17px;
+    transition: .5s;
+    display: block;
+}
+.header-menu ul li a:hover{
+    color: #b46827;
+}
+
+
+
+.header-menu ul li::after {
+    content: "";
+    width: 74%;
+    height: 2px;
+    position: absolute;
+    left: 10%;
+    bottom: 7%;
+    background: #b46827;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.header-menu  ul li:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+/* DROUPDOWN CSS */
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 230px;
+    background: rgb(248, 245, 245);
+    color: black;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    z-index: 999;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+.header-menu ul li ul li{
+    margin-left: 0;
+}
+.header-menu ul li ul li a{
+    color: black;
+}
+.header-menu ul li ul li:hover{
+    background: rgba(22, 1, 1, 0.24);
+    width: 100%;
+    margin-left: 0;
+    z-index: 9999;
+}
+.header-menu ul li ul li::after{
+    
+    display: none;
+}
+
+/* BENNER SECTION  CSS */
+.benner {
+    background: url(./img/benner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 250px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: -67px;
+}
+.benner-main::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.582);
+    z-index: -1;
+
+}
+ .benner-content{
+     position: relative;
+ }
+ .benner-content h1{
+     font-size: 70px;
+     margin-bottom: 30px;
+ }
+ .benner-content h2 {
+    font-size: 30px;
+    margin-bottom: 44px;
+    font-weight: 600;
+}
+.benner-content a {
+    color: #fff;
+    background: #c69453;
+    padding: 15px 32px;
+    display: inline-block;
+    border-radius: 30px;
+    transition: .5s;
+}
+.benner-content a:hover{
+    color:#c69453;
+    background: #c6c5c6;
+
+}
+.benner-content h2::before {
+    content: "";
+    width: 6%;
+    height: 2px;
+    position: absolute;
+    left: 28%;
+    bottom: 47%;
+    background: #fff;
+}
+.benner-content h2::after {
+    content: "";
+    width: 6%;
+    height: 2px;
+    position: absolute;
+    right: 28%;
+    bottom: 47%;
+    background: #fff;
+}
+
+/* service section css */
+.service{
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+.service_item {}
+.service_box {
+    box-shadow: 4px 3px 8px #1715152e;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 0;
+}
+.service_box img{}
+.service_box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.service_box p {
+    color: #767676;
+    padding: 20px 0;
+}
+.service_box a {
+    color: #fff;
+    background: #c69453;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.service_item .service_box:nth-child(4n+4){
+    margin: 0;
+}
+
+
+/* vedio secdtion css */
+.vedio{
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+.vedio-left{
+    width: 48%;
+}
+.vedio-content-right{
+    width: 48%;
+}
+.vedio-content-right h2 {
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+.vedio-content-right p {
+    padding: 15px 0;
+    font-size: 17px;
+    line-height: 28px;
+}
+.vedio-content-right span{
+    color: #c39150;
+}
+/* CONTACT  SECTION CSS */
+.contact{}
+.contact-form{
+    width: 50%;
+}
+.contact-form h2{
+    font-size: 35px ;
+    padding: 25px 0;
+}
+.contact-form p{
+    font-size: 17px;
+    padding: 20px 0;
+}
+.contact-img{
+    width: 45%;
+    margin-left: 5%;
+}
+.contact-form img{}
+
+
+.name{
+    width: 100%;
+    padding: 10px  10px;
+    margin-bottom: 10px;
+}
+.email{
+    width: 100%;
+    padding: 10px  10px;
+    margin-bottom: 10px;
+}
+.phone{
+    width: 100%;
+    padding: 10px  10px;
+    margin-bottom: 10px;
+}
+.message{
+    width: 100%;
+    padding: 10px  10px;
+ 
+}
